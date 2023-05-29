@@ -9,14 +9,15 @@ def main():
     print ("\nFörläng med skratt och en rolig historia!-")
 
     url = f"https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single"
+    
     nr = 1
     jokeobject = jokehandler.jokehandler (url)
 
     while True:
 
-
+      
         t_joke = jokeobject.get_joke()
-
+        
         print(f"\n {nr}.---------------------")
         print(f"\n{t_joke}")
         print("\n-----------------------------------") 
